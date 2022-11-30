@@ -12,6 +12,9 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 .mySlides {display:none}
 .w3-tag, .fa {cursor:pointer}
 .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+.months{
+  color:rgb(0, 0, 0); font-weight: 600;
+}
 </style>
 </head>
 <body>
@@ -35,12 +38,13 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     <div class="w3-center w3-padding-16">
         <!-- Widget -->
 
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Quick Signup and Totally Free.</span>
-      <div class="w3-content" style="width:340px; padding-top: 40px;">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Quick Signup and Totally Free!</span>
+      <div class="w3-content" style="width:320px; padding-top: 40px;">
         <iframe height="350px" width="100%" style="border: 0px solid " id="rii-iframe" src="https://app.riiwards.com/b/dashboard/widget?token=f9952bffa37eb630c25c815e33b3229d"></iframe>
         </div>
         <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Available Rewards</span>
     </div>
+    <div style="padding-bottom:40px;">
     <div class="w3-col l3 m6 w3-indigo w3-container w3-padding-16">
       <h3>Signup Reward</h3>
       <p>$5 OFF ANY CAR WASH OR DETAIL SERVICE.</p>
@@ -58,13 +62,29 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 
     <div class="w3-col l3 m6 w3-blue-gray w3-container w3-padding-16">
       <h3>Monthly Rewards</h3>
-      <p>Up to $20 OFF ANY CAR WASH OR DETAIL SERVICE.</p>
+    
+      <button onclick="myFunction('moList')" class="w3-button w3-block w3-left-align w3-white" style="margin-bottom:26.5px">
+      See full list</button>
+        <div id="moList" class="w3-container w3-hide">
+          <hr><p><span class="months">January:</span> We wish a Happy New Year to our Riiwards Club members. Please visit and enjoy 15% off (up to $20 value) of any car wash or detail service.</p>
+          <hr><p><span class="months">February:</span> Surprise your spouse and visit us for Valentine's Day. As a Riiwards Club Member enjoy 20% off ANY DETAIL SERVICE OR $3 OFF ANY FULL SERVICE WASH.</p>
+          <hr><p><span class="months">March:</span> As Spring season begins, visiting as Riiwards Club member you receive $20 OFF ANY COMPLETE INTERIOR DETAIL.(Reg price $189.99).</p>
+          <hr><p><span class="months">April:</span> As a Riiwards Club member, you get a tax break and enjoy $3 OFF ANY CAR WASH.</p>
+          <hr><p><span class="months">May:</span> $5 OFF Any car wash or detail service.</p>
+          <hr><p><span class="months">June:</span> Honoring Father's Day, our Riiwards Club members enjoy 15% off (up to $20 value) on any car wash service.</p>
+          <hr><p><span class="months">July:</span> Commemorate with us Independence Day and get 20% off (up to $20 value) on your next car wash.</p>
+          <hr><p><span class="months">August:</span> Bring your family and visit before school starts and get 15% off (up to $20 value) on any car wash or detail services.</p>
+          <hr><p><span class="months">September:</span> Commemorate with us Labor Day and get 15% off (up to $20 value) on any car wash or detail services.</p>
+          <hr><p><span class="months">October:</span> October is Halloween season! Visit and get a non-spooky 15% off (up to $20 value) of any car wash purchase.</p>
+          <hr><p><span class="months">November:</span> For Thanksgiving we give special thanks to all our Riiwards Club Members with a 20% off (up to $25 value) on any car wash.</p>
+          <hr><p><span class="months">December:</span> Holiday Greetings from our team. As a Riiwards Club Member .Buy 2 get 1 free.Not valid with other offer or discounts.Good for any car wash service.</p>
+
+        
+        </div>
     </div>
   </div>
+</div>
 
-
- 
-  
 
 </div>
 
@@ -73,12 +93,27 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
  <a href="http://www.acmecarwashsalinas.com/locations.html"><h4>Location</h4></a>
+ <p>537 ABBOTT STREET,&nbsp;
+  Salinas, California,
+  United States</p>
   <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <a href="https://www.facebook.com/profile.php?id=110332289031125"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
   
   </div>
   <p>Powered by <a href="https://www.riiwards.com" title="Riiwards" target="_blank" class="w3-hover-text-green">Riiwards</a></p>
+
+  <script>
+    function myFunction(moList) {
+      var x = document.getElementById(moList);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+
 </footer>
 
 </body>
